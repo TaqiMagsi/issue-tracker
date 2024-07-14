@@ -1,0 +1,23 @@
+<nz-table #basicTable [nzData]="issues">
+    <thead>
+      <tr>
+        <th>issueNo</th>
+        <th>type</th>
+        <th>title</th>
+        <th>description</th>
+        <th>priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{data.issueNo}}</td>
+        <td>{{data.type}}</td>
+        <td>{{data.title}}</td>
+        <td>
+            {{data.description}}
+        </td>
+        <nz-alert [nzType]="data.priority == 'high' ? 'error' : 'info'" [nzMessage]="data.priority">
+        </nz-alert>
+      </tr>
+    </tbody>
+  </nz-table>
