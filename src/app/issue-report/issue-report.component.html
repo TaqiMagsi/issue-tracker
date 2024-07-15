@@ -1,9 +1,16 @@
-<h3>Report an issue</h3>
-<form  [formGroup]="issueForm" >
-
-   <div>
-    <label >Title</label>
-    <input nz-input type="text" formControlName="title" >
-   </div>
-
-</form>
+<div class="mainwrap p-2">
+   <h3 class="text-2xl mb-2">Report an issue</h3>
+   <form  [formGroup]="issueForm" >
+      <div class="flex flex-col gap-3">
+       <label class="text-base" >Title</label>
+       <input class="w-[350px]" nz-input type="text" formControlName="title" >
+      </div>
+      <div class="flex flex-col gap-3 mt-3">
+         <label class="text-base" >Description</label>
+         <textarea class="w-[350px]" nz-input type="text" formControlName="title" ></textarea>
+      </div>
+       <div>
+         <label>Priority</label>
+       </div>
+   </form>
+</div>

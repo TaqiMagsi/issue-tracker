@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { IssueReportComponent } from './issue-report/issue-report.component';
+import { NzInputModule } from 'ng-zorro-antd/input';
+
 registerLocaleData(en);
 
 
@@ -32,7 +34,8 @@ registerLocaleData(en);
     HttpClientModule,
     NzTableModule,
     NzAlertModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NzInputModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
