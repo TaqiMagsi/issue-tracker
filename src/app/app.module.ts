@@ -13,6 +13,7 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { IssueReportComponent } from './issue-report/issue-report.component';
 registerLocaleData(en);
 
 
@@ -21,6 +22,7 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     IssueListComponent,
+    IssueReportComponent,
     
   ],
   imports: [
